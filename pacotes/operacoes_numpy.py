@@ -1,6 +1,5 @@
 from algebra_linear import calcular_determinante, calcular_inversa, resolver_sistema, autovalores_autovetores
 from random_arrays import numeros_uniformes, numeros_normais, inteiros_aleatorios, criar_array, array_zeros, array_uns, operacoes_vetorizadas, funcoes_matematicas
-import numpy as np
 
 print("=== EXEMPLOS DE ÁLGEBRA LINEAR ===")
 matriz = [[2, 1], [1, 3]]
@@ -27,7 +26,8 @@ b = criar_array([5, 6, 7, 8])
 print("4. Soma:", operacoes_vetorizadas(a, b, "soma"))
 print("5. Multiplicação:", operacoes_vetorizadas(a, b, "multiplicacao"))
 
-angulos = np.array([0, np.pi/2, np.pi])
+# Supondo que você tenha uma função para criar array de ângulos e obter pi no seu pacote
+angulos = criar_array([0, 3.141592653589793/2, 3.141592653589793])  # Use o valor de pi diretamente ou crie uma função get_pi()
 print("6. Senos:", funcoes_matematicas(angulos, "seno"))
 print("7. Cossenos:", funcoes_matematicas(angulos, "cosseno"))
 
